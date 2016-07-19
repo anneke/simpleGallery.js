@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>simpleGallery.js HTML</title>
+<link rel="stylesheet" type="text/css" href="demostyles.css">
+
+<!-- copy this into your project, if you want, along with the file -->
+<link rel="stylesheet" type="text/css" href="simpleGallery.css">
+<!-- okay stop copying ;) -->
+
+</head>
+<body>
+
+<div id="container">
+  <h1>simpleGallery.js</h1>
+
+  <div id="simpleGallery">
+
+    <ol class="process">
+        <li class="process__step process__step--active">
+            <h3>Slide number one</h3>
+            <p>Insert anything you want in here</p>
+        </li>
+        <li class="process__step">
+            <h3>Slide number two</h3>
+        </li>
+        <li class="process__step">
+            <h3>Slide number three</h3>
+            <p>Insert anything you want in here</p>
+        </li>
+    </ol>
+
+    <ul class="list list--hoz list--pager">
+        <li class="list__item list__item--previous">
+            <button id="js-first" class="is-hidden" aria-hidden="true">&laquo;</button>
+            <button id="js-previous" class="is-hidden" aria-hidden="true">Vorige</button>
+        </li>
+        <li class="list__item list__item--status">
+            <span id="js-stepStatus"></span>
+        </li>
+        <li class="list__item list__item--next">
+            <button id="js-next" aria-hidden="false">Volgende</button>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+<!-- copy this into your project, if you want, along with the file -->
+<script src="simpleGallery.js"></script>
+<!-- stop copying -->
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/*!
+ * styling for pure javascript simpleGallery.js v1.0.0
+ * https://github.com/asinnema/simpleGallery.js
+ *
+ * Copyright 2016, Anneke Sinnema
+ * Released under the MIT license
+ */
+
+ .process {
+     width: 100%;
+     position: relative;
+     height: 400px; /** this height is dependant of the content of your slides. **/
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+ }
+
+ .no-js .process {
+     height: inherit;
+ }
+
+ .process__step {
+     clear: both;
+     width: 100%;
+
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     z-index: 1;
+
+     -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+     -o-transition: opacity 1s;
+     transition: opacity 1s;
+ }
+
+ .no-js .process__step {
+     position: relative;
+     opacity: 1;
+     display: block;
+     height: inherit;
+ }
+
+ .no-js .list--pager {
+     display: none;
+ }
+
+ .process__step--active {
+     opacity: 1;
+     z-index: 2;
+ }
+
+
+ @media screen and (min-width: 768px) {
+
+     .list--pager {
+         display: flex;
+         list-style-type: none;
+     }
+
+     .list--pager .list__item--status {
+       font-size: 0.8em;
+       text-align: center;
+       text-transform: uppercase;
+     }
+
+     .list--pager .list__item {
+         width: 33.3333%;
+     }
+
+     .list--pager .list__item:last-child {
+         text-align: right;
+     }
