@@ -9,10 +9,11 @@
  .process {
      width: 100%;
      position: relative;
-     height: 400px; /** this height is dependant of the content of your slides. **/
+     height: 300px; /** this height is dependant of the content of your slides. **/
      padding: 0;
      margin: 0;
      list-style-type: none;
+     margin-bottom: 100px;
  }
 
  .no-js .process {
